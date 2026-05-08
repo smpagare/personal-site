@@ -7,12 +7,6 @@
     </linearGradient>
   </defs>
 
-  <!-- Cream rounded square background -->
-  <rect x="2" y="2" width="96" height="96" rx="22" fill="#fbf7ee"/>
-
-  <!-- Subtle gold border -->
-  <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.35"/>
-
   <!-- S in deep ink -->
   <text x="32" y="66"
         font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
@@ -21,7 +15,7 @@
         fill="#2a1f15"
         text-anchor="middle">S</text>
 
-  <!-- P in gold (overlapping/tight, like a monogram) -->
+  <!-- P in gold -->
   <text x="64" y="66"
         font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
         font-size="58"
@@ -29,9 +23,6 @@
         fill="url(#goldAccent)"
         text-anchor="middle">P</text>
 
-  <!-- Small gold dot accent between the letters at baseline -->
+  <!-- Small gold dot accent at baseline between letters -->
   <circle cx="48" cy="72" r="1.8" fill="url(#goldAccent)"/>
-
-  <!-- Thin connecting line beneath -->
-  <line x1="22" y1="80" x2="78" y2="80" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
 </svg>
