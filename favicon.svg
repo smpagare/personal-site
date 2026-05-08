@@ -1,28 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
     <linearGradient id="goldAccent" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#d4af4a"/>
+      <stop offset="0%" stop-color="#e8c468"/>
+      <stop offset="50%" stop-color="#c9a44a"/>
       <stop offset="100%" stop-color="#9c7820"/>
     </linearGradient>
   </defs>
 
-  <!-- Soft cream rounded square background -->
+  <!-- Cream rounded square background -->
   <rect x="2" y="2" width="96" height="96" rx="22" fill="#fbf7ee"/>
 
-  <!-- Very subtle gold border -->
+  <!-- Subtle gold border -->
   <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.35"/>
 
-  <!-- Bold serif S -->
-  <text x="38" y="68"
+  <!-- S in deep ink -->
+  <text x="32" y="66"
         font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
-        font-size="64"
+        font-size="58"
         font-weight="700"
         fill="#2a1f15"
         text-anchor="middle">S</text>
 
-  <!-- Gold dot accent -->
-  <circle cx="62" cy="63" r="4" fill="url(#goldAccent)"/>
+  <!-- P in gold (overlapping/tight, like a monogram) -->
+  <text x="64" y="66"
+        font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
+        font-size="58"
+        font-weight="700"
+        fill="url(#goldAccent)"
+        text-anchor="middle">P</text>
 
-  <!-- Thin gold underline accent -->
-  <line x1="22" y1="78" x2="78" y2="78" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.6"/>
+  <!-- Small gold dot accent between the letters at baseline -->
+  <circle cx="48" cy="72" r="1.8" fill="url(#goldAccent)"/>
+
+  <!-- Thin connecting line beneath -->
+  <line x1="22" y1="80" x2="78" y2="80" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
 </svg>
