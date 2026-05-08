@@ -27,13 +27,24 @@
         </a>
         <div class="nav-links">
             <a href="index.html">About</a>
-            <a href="index.html#research">Research</a>
+            <a href="research.html">Research</a>
             <a href="writing.html" class="active">Writing</a>
             <a href="cv.pdf" target="_blank">CV</a>
             <a href="index.html#contact">Contact</a>
             <a href="resources.html">Resources</a>
+            <button class="search-toggle" id="searchToggle" title="Search" aria-label="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
         </div>
     </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search the site..." autocomplete="off">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
 
     <!-- Writing Section -->
     <section class="section" style="padding-top: 100px;">
@@ -53,5 +64,6 @@
         <p>&copy; 2026 Siddhant Manav Pagare</p>
     </footer>
 
+    <script src="search.js"></script>
 </body>
 </html>

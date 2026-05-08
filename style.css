@@ -327,6 +327,112 @@ a:hover {
     }
 }
 
+/* ===== Search ===== */
+.search-toggle {
+    background: transparent;
+    border: none;
+    color: #ddd;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin-left: 4px;
+}
+
+.search-toggle:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.search-toggle svg {
+    width: 18px;
+    height: 18px;
+}
+
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(40, 30, 20, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    padding-top: 100px;
+}
+
+.search-overlay.active {
+    display: block;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 18px 24px;
+    font-size: 1.05rem;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.search-results {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-result {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f3f0ec;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.search-result:hover {
+    background: #faf8f5;
+    text-decoration: none;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result-section {
+    font-size: 0.75rem;
+    color: #8b1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.search-result-title {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.search-no-results {
+    padding: 20px 24px;
+    color: #888;
+    font-style: italic;
+    margin: 0;
+}
+
 @media (max-width: 500px) {
     .hero-text h1 {
         font-size: 1.8rem;

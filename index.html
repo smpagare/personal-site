@@ -52,13 +52,24 @@
         </a>
         <div class="nav-links">
             <a href="#about" class="active">About</a>
-            <a href="#research">Research</a>
+            <a href="research.html">Research</a>
             <a href="writing.html">Writing</a>
             <a href="cv.pdf" target="_blank">CV</a>
             <a href="#contact">Contact</a>
             <a href="resources.html">Resources</a>
+            <button class="search-toggle" id="searchToggle" title="Search" aria-label="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
         </div>
     </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search the site..." autocomplete="off">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
@@ -120,45 +131,21 @@
         </div>
     </section>
 
-    <!-- Working Papers Section -->
+    <!-- Recent Research Section -->
     <section id="research" class="section">
         <div class="section-container">
-            <h2 class="section-title">Working papers</h2>
+            <h2 class="section-title">Recent research</h2>
             <div class="section-content">
-                <div class="paper">
-                    <a href="#" class="paper-title">Paper Title Goes Here</a>.
-                    (2025). Working Paper.
-                    (<a href="#">slides</a>)
-                </div>
                 <div class="paper">
                     <span class="paper-title-plain">What Daily Productivity Measures Miss About Working from Home</span>.
                     (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6293978" target="_blank">Link</a>)
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section class="section">
-        <div class="section-container">
-            <h2 class="section-title">Publications</h2>
-            <div class="section-content">
-                <div class="paper">
-                    <a href="#" class="paper-title">Publication Title Goes Here</a>.
-                    (2024). <em>Journal Name</em>.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work in Progress Section -->
-    <section class="section">
-        <div class="section-container">
-            <h2 class="section-title">Work in progress</h2>
-            <div class="section-content">
                 <div class="paper">
                     <span class="paper-title-plain">Does Telework Widen the Abstract-Task Wage Premium? Evidence from Within-Occupation Variation</span>. (Master's Thesis)
                     (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6312638" target="_blank">Link</a>)
+                </div>
+                <div class="paper" style="margin-top: 28px;">
+                    <a href="research.html" class="paper-title">See all research &rarr;</a>
                 </div>
             </div>
         </div>
@@ -169,5 +156,6 @@
         <p>&copy; 2026 Siddhant Manav Pagare</p>
     </footer>
 
+    <script src="search.js"></script>
 </body>
 </html>
