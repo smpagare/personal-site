@@ -1,27 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <radialGradient id="medalBg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#a8341e"/>
-      <stop offset="60%" stop-color="#8b1a1a"/>
-      <stop offset="100%" stop-color="#5a0e0e"/>
-    </radialGradient>
     <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f4d27a"/>
-      <stop offset="50%" stop-color="#c9a44a"/>
-      <stop offset="100%" stop-color="#8b6f2a"/>
+      <stop offset="0%" stop-color="#f7e3a3"/>
+      <stop offset="50%" stop-color="#d4af4a"/>
+      <stop offset="100%" stop-color="#a07820"/>
     </linearGradient>
     <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#fff2c2"/>
-      <stop offset="50%" stop-color="#e8c768"/>
-      <stop offset="100%" stop-color="#a8841e"/>
+      <stop offset="0%" stop-color="#e8c468"/>
+      <stop offset="60%" stop-color="#c9a44a"/>
+      <stop offset="100%" stop-color="#8b6920"/>
     </linearGradient>
   </defs>
   <!-- Outer gold ring -->
   <circle cx="50" cy="50" r="48" fill="url(#goldRing)"/>
-  <!-- Inner burgundy medal -->
-  <circle cx="50" cy="50" r="42" fill="url(#medalBg)"/>
-  <!-- Subtle inner gold ring -->
-  <circle cx="50" cy="50" r="38" fill="none" stroke="url(#goldRing)" stroke-width="0.8" opacity="0.6"/>
+  <!-- White inner medal -->
+  <circle cx="50" cy="50" r="42" fill="#ffffff"/>
+  <!-- Inner gold accent ring -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="url(#goldRing)" stroke-width="1" opacity="0.85"/>
   <!-- Laurel branch left -->
   <path d="M 18 50 Q 22 40 26 35 M 22 45 Q 26 40 30 38 M 22 52 Q 26 50 30 50 M 22 58 Q 26 56 30 56" stroke="url(#goldRing)" stroke-width="1.2" fill="none" opacity="0.7" stroke-linecap="round"/>
   <!-- Laurel branch right -->
