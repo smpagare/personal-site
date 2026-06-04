@@ -123,3 +123,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Stamp the footer with the file's last modified date (auto-updates on each push)
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('site-last-updated');
+    if (!el) return;
+    const d = new Date(document.lastModified);
+    if (isNaN(d)) return;
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    el.textContent = `${yyyy}-${mm}-${dd}`;
+});

@@ -281,6 +281,12 @@ a:hover {
     background: #faf8f5;
 }
 
+.footer .last-updated {
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
     .hero {
