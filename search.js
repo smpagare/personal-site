@@ -3,7 +3,7 @@ const searchIndex = [
     // About / Hero
     {
         title: "About",
-        content: "Siddhant Manav Pagare MSc Economics and Policy King's College London labour economics applied microeconomics causal inference",
+        content: "Siddhant Manav Pagare Research Assistant Political Economy Centre for Sustainable Business King's College London MSc Economics and Policy labour economics applied microeconomics causal inference",
         url: "index.html",
         section: "About"
     },
