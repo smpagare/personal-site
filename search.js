@@ -31,7 +31,7 @@ const searchIndex = [
     },
     {
         title: "Resources",
-        content: "PhD students research assistants graduate school coding empirical methods general reading advice",
+        content: "PhD students research assistants graduate school coding empirical methods general reading advice EconJobMarket PREDOC predoc opportunities RA job market",
         url: "resources.html",
         section: "Page"
     },
