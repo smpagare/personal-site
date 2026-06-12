@@ -8,14 +8,6 @@ const searchIndex = [
         section: "About"
     },
 
-    // Working Papers
-    {
-        title: "What Daily Productivity Measures Miss About Working from Home",
-        content: "WFH productivity efficiency additional hours work from home telework",
-        url: "research.html",
-        section: "Working paper"
-    },
-
     // Work in Progress
     {
         title: "Does Telework Widen the Abstract-Task Wage Premium? Evidence from Within-Occupation Variation",
