@@ -31,7 +31,7 @@ const searchIndex = [
     },
     {
         title: "Public Goods",
-        content: "PhD students research assistants graduate school coding empirical methods general reading advice EconJobMarket PREDOC predoc opportunities RA job market EconGradAdvice Gentzkow Shapiro Code and Data R for Data Science Wickham Grolemund tidyverse Grant McDermott EC607 Data Science for Economists reproducible research",
+        content: "PhD students research assistants graduate school coding empirical methods general reading advice EconJobMarket PREDOC predoc opportunities RA job market EconGradAdvice Gentzkow Shapiro Code and Data R for Data Science Wickham Grolemund tidyverse Grant McDermott EC607 Data Science for Economists reproducible research NBER research assistant positions IPA Innovations for Poverty Action data cleaning guide survey data",
         url: "resources.html",
         section: "Page"
     },
