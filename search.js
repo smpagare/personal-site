@@ -31,7 +31,7 @@ const searchIndex = [
     },
     {
         title: "Resources",
-        content: "PhD students research assistants graduate school coding empirical methods general reading advice EconJobMarket PREDOC predoc opportunities RA job market",
+        content: "PhD students research assistants graduate school coding empirical methods general reading advice EconJobMarket PREDOC predoc opportunities RA job market EconGradAdvice Gentzkow Shapiro Code and Data R for Data Science Wickham Grolemund tidyverse Grant McDermott EC607 Data Science for Economists reproducible research",
         url: "resources.html",
         section: "Page"
     },
