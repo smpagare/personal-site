@@ -14,15 +14,15 @@
     <meta property="og:url" content="https://smpagare.github.io/personal-site/writing.html">
     <meta property="og:image" content="https://smpagare.github.io/personal-site/og-image.jpg">
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=5">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=5">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=5">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=6">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=6">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=6">
 
-    <script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+    <script>document.documentElement.classList.add("js");(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -119,41 +119,23 @@
     </main>
 
     <footer class="site-footer">
-        <div class="wrap">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">Siddhant Manav Pagare</div>
-                    <address>Department of Political Economy<br>King's College London<br>Bush House, North East Wing<br>30 Aldwych, London WC2B 4BG</address>
-                    <div class="footer-affil"><a href="https://www.kcl.ac.uk/political-economy" target="_blank" rel="noopener" aria-label="Department of Political Economy, King's College London"><img src="kcl-logo.svg" alt="King's College London"></a></div>
-                </div>
-                <div>
-                    <h4>Site</h4>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="writing.html">Writing</a></li>
-                        <li><a href="resources.html">Public Goods</a></li>
-                        <li><a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Elsewhere</h4>
-                    <ul>
-                        <li><a href="mailto:siddhantpagare2014@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/smpagare" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://scholar.google.com/citations?user=FUcXey8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
-                        <li><a href="https://orcid.org/0009-0000-8958-0547" target="_blank" rel="noopener">ORCID</a></li>
-                        <li><a href="https://www.linkedin.com/in/sidpagare/" target="_blank" rel="noopener">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2026 Siddhant Manav Pagare. All rights reserved.</span>
-                <span>Last updated <span id="site-last-updated">September 2026</span></span>
-            </div>
+        <div class="wrap footer-row">
+            <a class="footer-affil" href="https://www.kcl.ac.uk/political-economy" target="_blank" rel="noopener" aria-label="Department of Political Economy, King's College London"><img src="kcl-logo.svg" alt="King's College London"></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="writing.html">Writing</a>
+                <a href="resources.html">Public Goods</a>
+                <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+                <a href="mailto:siddhantpagare2014@gmail.com">Email</a>
+            </nav>
+        </div>
+        <div class="wrap footer-bottom">
+            <span>&copy; 2026 Siddhant Manav Pagare</span>
+            <span>Last updated <span id="site-last-updated">September 2026</span></span>
         </div>
     </footer>
 
-    <script src="site.js?v=5"></script>
+    <script src="site.js?v=6"></script>
 </body>
 </html>

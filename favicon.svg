@@ -1,28 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#e8c468"/>
-      <stop offset="50%" stop-color="#c9a44a"/>
-      <stop offset="100%" stop-color="#9c7820"/>
-    </linearGradient>
-  </defs>
-
-  <!-- S in deep ink -->
-  <text x="32" y="66"
-        font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
-        font-size="58"
-        font-weight="700"
-        fill="#2a1f15"
-        text-anchor="middle">S</text>
-
-  <!-- P in gold -->
-  <text x="64" y="66"
-        font-family="'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif"
-        font-size="58"
-        font-weight="700"
-        fill="url(#goldAccent)"
-        text-anchor="middle">P</text>
-
-  <!-- Small gold dot accent at baseline between letters -->
-  <circle cx="48" cy="72" r="1.8" fill="url(#goldAccent)"/>
+  <rect width="100" height="100" rx="22" fill="#0E3C46"/>
+  <text x="46" y="69" font-family="Didot, 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#FDF9EC" text-anchor="middle" letter-spacing="-2">SP</text>
+  <circle cx="84" cy="64" r="5.5" fill="#E5C45C"/>
 </svg>
