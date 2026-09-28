@@ -298,19 +298,20 @@ details.abstract .body p + p { margin-top: 0.7em; }
 .timeline .where { color: var(--ink-2); font-size: 0.96rem; }
 
 /* Contact */
-.contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 28px; }
 .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 28px; }
 .contact-card h3 { font-size: 1.25rem; margin-bottom: 14px; }
 .contact-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .contact-row:last-child { border-bottom: none; }
 .contact-row .k { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; min-width: 74px; }
-.contact-row .v { flex: 1; font-size: 0.98rem; word-break: break-word; }
+.contact-row .v { flex: 1; min-width: 0; font-size: 0.98rem; overflow-wrap: anywhere; }
 .copy-btn { border: 1px solid var(--line-2); background: var(--bg-2); border-radius: 7px; padding: 5px 10px; font-size: 0.8rem; cursor: pointer; color: var(--ink-2); white-space: nowrap; }
 .copy-btn:hover { border-color: var(--teal-500); color: var(--link); }
 .copy-btn.done { background: var(--gold-tint); border-color: var(--gold-deep); }
 address { font-style: normal; line-height: 1.6; color: var(--ink-2); }
-.profiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.profiles a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--ink); background: var(--bg); transition: border-color .15s ease, transform .15s ease, background .15s ease; }
+.profiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.profiles li { min-width: 0; }
+.profiles a { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--ink); background: var(--bg); transition: border-color .15s ease, transform .15s ease, background .15s ease; }
 .profiles a:hover { border-color: var(--gold-deep); background: var(--card); transform: translateY(-1px); color: var(--ink); }
 .pf-icon { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--teal-900); color: var(--cream); flex-shrink: 0; transition: background .15s ease, color .15s ease; }
 .profiles a:hover .pf-icon { background: var(--teal-700); color: var(--gold); }
@@ -418,7 +419,6 @@ html.js .reveal.in { opacity: 1; transform: none; }
     .fact:first-child { border-top: none; }
     .page-title { padding: 36px 0 28px; }
     .link-item { grid-template-columns: 1fr; }
-    .profiles { grid-template-columns: 1fr; }
     .link-item .host { justify-self: start; }
     .contents-bar .label { display: none; }
 }
