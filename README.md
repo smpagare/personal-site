@@ -16,7 +16,10 @@ Live site: https://smpagare.github.io/personal-site/
 | style.css | Design system: colour tokens (light and dark), typography, layout, components |
 | site.js | Theme toggle, mobile menu, site search, filters, scroll reveal, contents bar, copy to clipboard |
 | cv.pdf | Current curriculum vitae |
-| photo.jpg, og-image.jpg | Portrait and social preview image |
+| photo-340 to photo-1000 (.jpg and .webp), og-image.jpg | Portrait at four widths for the hero srcset, and the social preview image |
+| favicon.svg, favicon-32x32.png, apple-touch-icon.png | Site icons: SVG favicon, 32 pixel PNG fallback, iOS home screen icon |
+| kcl-logo.svg | Department logo in the footer of the four main pages, linking to the department website |
+| googled1384377132a171d.html | Google Search Console ownership verification, keep in the repository root |
 | presentation.pdf | Dissertation slides, February 2026 |
 | sitemap.xml, robots.txt | Search engine files |
 
@@ -32,7 +35,8 @@ Site search needs no index file. On first use it fetches the four pages, reads e
 2. New commentary or press coverage: add an entry in writing.html.
 3. New link: add a link-item to the appropriate group in resources.html.
 4. New CV: replace cv.pdf and update the month shown in the contact section of index.html.
-5. Bump the version query on style.css and site.js in every page if browsers cache old assets.
+5. New photo: crop to 4 by 5, then regenerate photo-340, photo-440, photo-680 and photo-1000 in JPEG and WebP, and og-image.jpg at 1200 by 630.
+6. Bump the version query on style.css and site.js in every page if browsers cache old assets.
 
 Prose on the site avoids hyphens and dashes; paper titles keep their published punctuation.
 
