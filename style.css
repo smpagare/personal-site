@@ -309,10 +309,15 @@ details.abstract .body p + p { margin-top: 0.7em; }
 .copy-btn:hover { border-color: var(--teal-500); color: var(--link); }
 .copy-btn.done { background: var(--gold-tint); border-color: var(--gold-deep); }
 address { font-style: normal; line-height: 1.6; color: var(--ink-2); }
-.social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
-.social a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid var(--line-2); border-radius: 10px; text-decoration: none; color: var(--ink-2); font-size: 0.9rem; font-weight: 500; background: var(--card); transition: all .15s ease; }
-.social a:hover { border-color: var(--teal-500); color: var(--link); transform: translateY(-1px); }
-.social svg { width: 16px; height: 16px; }
+.profiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.profiles a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--ink); background: var(--bg); transition: border-color .15s ease, transform .15s ease, background .15s ease; }
+.profiles a:hover { border-color: var(--gold-deep); background: var(--card); transform: translateY(-1px); color: var(--ink); }
+.pf-icon { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--teal-900); color: var(--cream); flex-shrink: 0; transition: background .15s ease, color .15s ease; }
+.profiles a:hover .pf-icon { background: var(--teal-700); color: var(--gold); }
+.pf-icon svg { width: 17px; height: 17px; }
+.pf-text { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.pf-name { font-weight: 600; font-size: 0.92rem; }
+.pf-handle { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Link library (public goods) */
 .link-groups { display: grid; gap: 34px; }
@@ -413,6 +418,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
     .fact:first-child { border-top: none; }
     .page-title { padding: 36px 0 28px; }
     .link-item { grid-template-columns: 1fr; }
+    .profiles { grid-template-columns: 1fr; }
     .link-item .host { justify-self: start; }
     .contents-bar .label { display: none; }
 }
