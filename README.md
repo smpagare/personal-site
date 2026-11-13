@@ -8,10 +8,10 @@ Live site: https://smpagare.github.io/personal-site/
 
 | File | Purpose |
 |------|---------|
-| index.html | Home: introduction, at a glance facts, research highlights, writing, background, contact |
+| index.html | Home: introduction, research cards, background, contact band, map of the department |
 | research.html | Working papers, current projects, dissertation, research areas, code and data |
 | writing.html | Commentary and policy writing, media coverage |
-| resources.html | Public Goods: a filterable library of free resources for economics students and research assistants |
+| resources.html | Public Goods: a filterable library of resources for economics students and research assistants, with a contents bar |
 | 404.html | Not found page served by GitHub Pages |
 | style.css | Design system: colour tokens (light and dark), typography, layout, components |
 | site.js | Theme toggle, mobile menu, site search, filters, scroll reveal, contents bar, copy to clipboard |
@@ -28,6 +28,8 @@ Live site: https://smpagare.github.io/personal-site/
 The site is static HTML, CSS and JavaScript with no build step. GitHub Pages serves the main branch from the repository root.
 
 Site search needs no index file. On first use it fetches the four pages, reads every section with an id and every element carrying a data-index attribute, and searches titles, text and the keywords in data-index. Adding content to a page makes it searchable automatically.
+
+The map at the bottom of the home page is an OpenStreetMap embed. It loads only when the visitor scrolls near it, and the whole strip is a link to Google Maps.
 
 ## Updating content
 

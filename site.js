@@ -359,6 +359,30 @@
         });
     }
 
+    /* ---------- Map: load the embed only when the visitor nears it ---------- */
+    function initMap() {
+        var frame = $(".map-band iframe[data-src]");
+        if (!frame) { return; }
+        var loaded = false;
+        function load() {
+            if (loaded) { return; }
+            loaded = true;
+            frame.setAttribute("src", frame.getAttribute("data-src"));
+            window.removeEventListener("scroll", check);
+        }
+        function check() {
+            if (frame.getBoundingClientRect().top < window.innerHeight + 600) { load(); }
+        }
+        if ("IntersectionObserver" in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (en) { if (en.isIntersecting) { load(); io.disconnect(); } });
+            }, { rootMargin: "600px 0px" });
+            io.observe(frame);
+        }
+        window.addEventListener("scroll", check, { passive: true });
+        check();
+    }
+
     /* ---------- Footer stamp ---------- */
     function initStamp() {
         var el = $("#site-last-updated");
@@ -370,7 +394,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        initTheme(); initNav(); initSearch(); initFilters(); initReveal(); initContents(); initCopy(); initExpandAll(); initStamp();
+        initTheme(); initNav(); initSearch(); initFilters(); initReveal(); initContents(); initCopy(); initExpandAll(); initMap(); initStamp();
         window.__siteReady = true;
     });
 })();

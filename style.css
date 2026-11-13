@@ -334,6 +334,18 @@ mark { background: var(--gold-tint); color: inherit; padding: 0 2px; border-radi
 .callout { background: var(--teal-050); border: 1px solid var(--teal-100); border-left: 4px solid var(--teal-500); border-radius: var(--radius-sm); padding: 16px 18px; color: var(--ink-2); font-size: 0.96rem; }
 .callout strong { color: var(--ink); }
 
+/* ===== Map band ===== */
+.map-band { position: relative; height: 340px; background: var(--bg-2); overflow: hidden; }
+.map-band iframe { width: 100%; height: 100%; border: 0; display: block; pointer-events: none; filter: grayscale(0.35) contrast(1.02); }
+:root[data-theme="dark"] .map-band iframe { filter: invert(0.92) hue-rotate(180deg) grayscale(0.3) brightness(0.95); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .map-band iframe { filter: invert(0.92) hue-rotate(180deg) grayscale(0.3) brightness(0.95); } }
+.map-link { position: absolute; inset: 0; display: flex; align-items: flex-end; text-decoration: none; }
+.map-link .wrap { padding-bottom: 22px; }
+.map-pill { display: inline-flex; align-items: center; gap: 8px; background: var(--teal-900); color: #fff; padding: 10px 16px; border-radius: 999px; font-weight: 600; font-size: 0.92rem; box-shadow: var(--shadow-md); transition: background .15s ease, color .15s ease; }
+.map-pill svg { width: 15px; height: 15px; }
+.map-link:hover .map-pill, .map-link:focus-visible .map-pill { background: var(--gold); color: var(--teal-950); }
+.link-group { scroll-margin-top: calc(var(--header-h) + var(--bar-h) + 20px); }
+
 /* ===== Footer ===== */
 .site-footer { background: var(--teal-950); color: #C7DADD; padding: 34px 0 24px; }
 .site-footer a { color: #E5EEEF; text-decoration: none; }
@@ -406,6 +418,9 @@ html.js .reveal.in { opacity: 1; transform: none; }
     .card h3 { font-size: 1.25rem; }
     .entry { grid-template-columns: 1fr; gap: 4px; }
     .page-title { padding: 36px 0 28px; }
+    .map-band { height: 260px; }
+    .map-link { align-items: flex-start; }
+    .map-link .wrap { padding-top: 14px; padding-bottom: 0; }
     .link-item { grid-template-columns: 1fr; }
     .link-item .host { justify-self: start; }
     .profiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 12px; }
