@@ -29,7 +29,7 @@ The site is static HTML, CSS and JavaScript with no build step. GitHub Pages ser
 
 Site search needs no index file. On first use it fetches the four pages, reads every section with an id and every element carrying a data-index attribute, and searches titles, text and the keywords in data-index. Adding content to a page makes it searchable automatically.
 
-The map at the bottom of the home page is an OpenStreetMap embed. It loads only when the visitor scrolls near it, and the whole strip is a link to Google Maps.
+The small map in the footer is an OpenStreetMap embed. It loads only when the visitor scrolls near it, and the card links to Google Maps.
 
 ## Updating content
 

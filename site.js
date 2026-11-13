@@ -361,7 +361,7 @@
 
     /* ---------- Map: load the embed only when the visitor nears it ---------- */
     function initMap() {
-        var frame = $(".map-band iframe[data-src]");
+        var frame = $(".map-box iframe[data-src]");
         if (!frame) { return; }
         var loaded = false;
         function load() {
@@ -371,12 +371,12 @@
             window.removeEventListener("scroll", check);
         }
         function check() {
-            if (frame.getBoundingClientRect().top < window.innerHeight + 600) { load(); }
+            if (frame.getBoundingClientRect().top < window.innerHeight + 300) { load(); }
         }
         if ("IntersectionObserver" in window) {
             var io = new IntersectionObserver(function (entries) {
                 entries.forEach(function (en) { if (en.isIntersecting) { load(); io.disconnect(); } });
-            }, { rootMargin: "600px 0px" });
+            }, { rootMargin: "300px 0px" });
             io.observe(frame);
         }
         window.addEventListener("scroll", check, { passive: true });
